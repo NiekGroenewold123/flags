@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raad de Vlag</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Raad de vlag</h1>
+  </header>
+
+  <main>
+    <section id="game-settings">
+      <label for="rounds">Aantal rondes:</label>
+      <input type="number" id="rounds" min="1" max="10" value="3">
+      <button id="start-button">Start Spel</button>
+    </section>
+
+    <section id="game" hidden>
+      <figure>
+        <img id="flag-image" src="" alt="vlag">
+        <figcaption id="feedback">Kies het juiste land</figcaption>
+      </figure>
+
+      <section id="answer-options" class="button-group"></section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flag Game</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
